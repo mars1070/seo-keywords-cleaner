@@ -568,7 +568,28 @@ def clean_keywords_phase1(df):
         raise Exception(f"Erreur lors du nettoyage phase 1 : {str(e)}")
 
 def main():
-    st.title(" Nettoyeur de Mots-Clés SEO - Etape 1")
+    # Configuration de la page Streamlit avec emoji balai
+    st.set_page_config(
+        page_title="🧹 Nettoyeur de Mots-Clés SEO - Etape 1",
+        page_icon="🧹",
+        layout="wide",
+        initial_sidebar_state="auto"
+    )
+
+    # CSS personnalisé pour la largeur maximale
+    st.markdown("""
+        <style>
+            .block-container {
+                max-width: 1300px;
+                padding-top: 1rem;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+
+    st.title("🧹 Nettoyeur de Mots-Clés SEO - Etape 1")
     
     # Ajouter le CSS pour l'effet pulse et les stats
     st.markdown("""
