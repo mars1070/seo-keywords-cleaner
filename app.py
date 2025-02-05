@@ -576,14 +576,20 @@ def main():
         initial_sidebar_state="auto"
     )
 
-    # CSS personnalisé pour la largeur maximale
+    # CSS personnalisé pour la largeur maximale et l'espacement
     st.markdown("""
         <style>
             .block-container {
                 max-width: 1300px;
-                padding-top: 1rem;
+                padding-top: 0.5rem;
                 padding-right: 1rem;
                 padding-left: 1rem;
+                padding-bottom: 1rem;
+            }
+            #MainMenu {visibility: hidden;}
+            header {visibility: hidden;}
+            .stTitle {
+                margin-top: -3rem;
                 padding-bottom: 1rem;
             }
         </style>
