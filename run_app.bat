@@ -1,0 +1,3 @@
+@echo off
+echo Lancement de SEO Keywords Cleaner...
+streamlit run "%~dp0\app.py"

@@ -1,0 +1,8 @@
+streamlit
+pandas
+openai
+python-dotenv
+openpyxl
+xlsxwriter
+thefuzz
+python-Levenshtein
